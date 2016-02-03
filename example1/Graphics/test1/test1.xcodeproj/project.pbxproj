@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D8A15111C5861FC0005974E /* example1.cp in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A150F1C5861FC0005974E /* example1.cp */; };
-		1D8A15161C5862060005974E /* InitShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A15121C5862060005974E /* InitShader.cpp */; };
+		1D7FC9C51C619C8400D138A9 /* example1.cp in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FC9BF1C619C8400D138A9 /* example1.cp */; };
+		1D7FC9C61C619C8400D138A9 /* InitShader.cp in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FC9C11C619C8400D138A9 /* InitShader.cp */; };
 		1D8A15181C5862CF0005974E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8A15171C5862CF0005974E /* OpenGL.framework */; };
 		1D8A151A1C5862E80005974E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8A15191C5862E80005974E /* GLUT.framework */; };
 /* End PBXBuildFile section */
@@ -26,15 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D7FC9BD1C619C8400D138A9 /* Angel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Angel.h; path = ../../../../../Documents/example1/Angel.h; sourceTree = "<group>"; };
+		1D7FC9BE1C619C8400D138A9 /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckError.h; path = ../../../../../Documents/example1/CheckError.h; sourceTree = "<group>"; };
+		1D7FC9BF1C619C8400D138A9 /* example1.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = example1.cp; path = ../../../../../Documents/example1/example1.cp; sourceTree = "<group>"; };
+		1D7FC9C01C619C8400D138A9 /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader21.glsl; path = ../../../../../Documents/example1/fshader21.glsl; sourceTree = "<group>"; };
+		1D7FC9C11C619C8400D138A9 /* InitShader.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InitShader.cp; path = ../../../../../Documents/example1/InitShader.cp; sourceTree = "<group>"; };
+		1D7FC9C21C619C8400D138A9 /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mat.h; path = ../../../../../Documents/example1/mat.h; sourceTree = "<group>"; };
+		1D7FC9C31C619C8400D138A9 /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vec.h; path = ../../../../../Documents/example1/vec.h; sourceTree = "<group>"; };
+		1D7FC9C41C619C8400D138A9 /* vshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader21.glsl; path = ../../../../../Documents/example1/vshader21.glsl; sourceTree = "<group>"; };
 		1D8A15011C585EFA0005974E /* test1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test1; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D8A150D1C5861FC0005974E /* Angel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Angel.h; path = ../../../Downloads/Angel.h; sourceTree = "<group>"; };
-		1D8A150E1C5861FC0005974E /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckError.h; path = ../../../Downloads/CheckError.h; sourceTree = "<group>"; };
-		1D8A150F1C5861FC0005974E /* example1.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = example1.cp; path = ../../../Downloads/example1.cp; sourceTree = "<group>"; };
-		1D8A15101C5861FC0005974E /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader21.glsl; path = ../../../Downloads/fshader21.glsl; sourceTree = "<group>"; };
-		1D8A15121C5862060005974E /* InitShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InitShader.cpp; path = ../../../Downloads/InitShader.cpp; sourceTree = "<group>"; };
-		1D8A15131C5862060005974E /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mat.h; path = ../../../Downloads/mat.h; sourceTree = "<group>"; };
-		1D8A15141C5862060005974E /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vec.h; path = ../../../Downloads/vec.h; sourceTree = "<group>"; };
-		1D8A15151C5862060005974E /* vshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader21.glsl; path = ../../../Downloads/vshader21.glsl; sourceTree = "<group>"; };
 		1D8A15171C5862CF0005974E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		1D8A15191C5862E80005974E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -73,14 +73,14 @@
 		1D8A15031C585EFA0005974E /* test1 */ = {
 			isa = PBXGroup;
 			children = (
-				1D8A15121C5862060005974E /* InitShader.cpp */,
-				1D8A15131C5862060005974E /* mat.h */,
-				1D8A15141C5862060005974E /* vec.h */,
-				1D8A15151C5862060005974E /* vshader21.glsl */,
-				1D8A150D1C5861FC0005974E /* Angel.h */,
-				1D8A150E1C5861FC0005974E /* CheckError.h */,
-				1D8A150F1C5861FC0005974E /* example1.cp */,
-				1D8A15101C5861FC0005974E /* fshader21.glsl */,
+				1D7FC9BD1C619C8400D138A9 /* Angel.h */,
+				1D7FC9BE1C619C8400D138A9 /* CheckError.h */,
+				1D7FC9BF1C619C8400D138A9 /* example1.cp */,
+				1D7FC9C01C619C8400D138A9 /* fshader21.glsl */,
+				1D7FC9C11C619C8400D138A9 /* InitShader.cp */,
+				1D7FC9C21C619C8400D138A9 /* mat.h */,
+				1D7FC9C31C619C8400D138A9 /* vec.h */,
+				1D7FC9C41C619C8400D138A9 /* vshader21.glsl */,
 			);
 			path = test1;
 			sourceTree = "<group>";
@@ -141,8 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D8A15111C5861FC0005974E /* example1.cp in Sources */,
-				1D8A15161C5862060005974E /* InitShader.cpp in Sources */,
+				1D7FC9C51C619C8400D138A9 /* example1.cp in Sources */,
+				1D7FC9C61C619C8400D138A9 /* InitShader.cp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +256,7 @@
 				1D8A150A1C585EFA0005974E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

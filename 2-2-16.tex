@@ -1,0 +1,18 @@
+\documentclass{article}
+\begin{document}
+
+Review the way shaders are implemented on the GPU . Remember the Vertex shader,
+the PA, the Clip, the Rasterization, the F shader. We do our work in normalized
+device coordinates. OpenGL uses the LEFT hand rule. This means the depth is into
+the screen. We will reverse this when we use OpenGL. The rasterizer converts the
+points in normalized device coordinates into points on the the screen. At this
+point we will consider drawing a cube in opengl. We will triangulate the cube,
+into 38 verticies. 
+
+Take a look at translation, rotation and scaling transformations if I have
+nothing better to do... Though it isn't a bad idea to learn this for next time.
+
+Tests will involve the graphics pipeline, transformations on points, the
+matricies. What is done where in the pipeline, and what does each component do? 
+
+\end{document}
