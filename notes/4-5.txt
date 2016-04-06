@@ -1,0 +1,47 @@
+Texture Mapping in OpenGL
+
+1) We create a texture image of a transfer to OpenGL driver (GPU memory)
+and set the sampling parameters
+
+2) Assign texture coordinates to vertices of a model and transfer them to
+OpenGL driver (GPU Memory)
+
+3) In the fragment shader, we use the interpolated texture coordinate to
+sample the texture image/texture map and return a texel to use in coloring
+of a pixel/fragment.
+
+U,V - S,T mapping - Refers to the coordinate transfer between the textures,
+and the image itself.
+
+This mapping process has two cases:
+
+  Magnification - When the number of pixels exceeds the number of texels,
+                  we use either nearest neighbor or linear interpolation
+                  to approximate a color value for a pixel. Alternatively,
+                  we can use Bi-linear interpolation for this.
+
+                  Bilinear interpolation can be done using the following formula
+
+                  f(x,y) = f(0,0)(1-y)(1-x) + f(0,1)y(1-x)+
+                           f(1,0)(1-y)x + f(1,1)xy
+
+  Minification - When the number of texels exceeds the number of pixels,
+                 we sample the texture to generate a color value for a pixel
+                 at that point. This can lead to aliasing, flickering,
+                 and other effects.
+
+The best way to handle problems with minification and magnification is
+to have multiple copies of the same texture of different resolutions.
+For this, we use a low pass filter to remove high frequencies from the
+original image.
+
+We only have a finite number of "Mipmaps" ("much in a small space" texture
+maps)
+
+Mipmapping: For textured objects that are `far` from the eye (viewpoint)
+            and small in screen space. The ratio of pixels to texels
+            becomes very low and the texture will be undersampled. The
+            solution is to create lower resolution versions of the texture
+            by successively applying low pass filters and downsampling the
+            texture (usually by a factor of two). This is referred to as
+            the "Mipmap" pyramid.
