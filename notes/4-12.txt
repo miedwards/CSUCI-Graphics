@@ -1,0 +1,51 @@
+Environment Mapping
+
+
+------------------------
+| Application Program  |
+------------------------
+|
+v
+---------------------
+| Graphics Pipeline |
+---------------------
+|
+v
+-----------------
+| Digital Image |
+-----------------
+
+Application Program
+* Models
+  - Vertices
+  - Normals
+  - Texture Coordinates
+  - Matrices
+* Scene
+  - List of Objects
+  - Tree/Graph of objects
+
+Graphics system
+* OpenGL Graphics Rendering Pipeline
+
+Form of the application when using a pipeline rendering architecture.
+That is, for each object in the scene draw the object.
+
+We can isolate ourselves from OpenGL if we write our code cleanly, but
+we should in general. However, in this course, we shouldn't waste our
+remaining time on it.
+
+Now, the graphics pipeline is agnostic to the source of each individual
+triangle it processes. So object interactions, such as reflections and
+shadows are impossible to truly model using this pipeline. However, there
+are ways to simulate these effects.
+
+In the past, before the development of the aforementioned tricks, we
+used image based renderers, such as ray tracers. Ray tracers determine
+the color value of each individual pixel by extrapolating a ray of light
+from the position of the eye in the image into the virtual area of the
+scene. Generally, the objects in the image will be broken up into an
+object tree or graph. This allows us to simulate reflections and shadows.
+
+Nowadays we use environment maps, pool maps, and mirror maps. Some
+of these methods are examples of multi-pass rendering. 
