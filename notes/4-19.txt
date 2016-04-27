@@ -1,0 +1,22 @@
+This will be on the final.
+
+Bump mapping varies the apparent shape of a surface by altering
+the surface normals.
+
+Lighting calculations will use these modified normals and
+produce the apparent bumpiness.
+
+There are different ways to modify the normals. Usually a
+texture map is sed to store the normals. A bump map
+would specify a normal map and a height map.
+
+These normals are taken from the colors of the texture map
+Possibly from
+
+2 * Blue / 256 -1.0
+
+In order to do calculations with this, we need to convert lighting
+and other relevant vectors into a tangent space, defined relative to
+the point on the object. To do this, we need a rotation space.
+We need the tangent and bi-tangent aligned with the bump map axes
+the u and v, or s and t. To do this, we start with a triangle.
