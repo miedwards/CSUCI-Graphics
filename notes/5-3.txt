@@ -1,0 +1,35 @@
+Inverse Kinematics
+
+We take the inverse using the Jacobian in order to perform it.
+We want to compute the change in joint angles needed to
+produce the change in endpoint position.
+
+On Exam. See picture.
+
+On Midterm:
+- Texture Mapping
+  - Basic ideas
+  - Example like Assignment
+- Aliasing / circumstance / solution
+  - Mipmap
+  - Low pass filter / Down sample
+- Bump Mapping
+  - Tangent Space
+  - Transforming Light Vectors
+  - tangent/bi-tangent normal
+- Environment Mapping
+  - 6 texture maps used to calculate the reflection
+  - How to compute the reflection
+- Dynamic Simulation
+  - Bouncing Ball
+  - Taylor and Gravity
+  - Euler Approximation
+- Inverse Kinematics
+  - Build the Jacobian
+  - Draw pictures
+- Know the Pipeline?
+  - Model View Projection
+  - Primitive Assembly
+  - Clipper
+  - Rasterizer
+  - FShader - colorization
